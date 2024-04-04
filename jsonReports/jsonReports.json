@@ -1,0 +1,216 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\playwright.config.ts",
+    "rootDir": "C:/Users/mallika.bhat/Playwright_20thMarch/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 360000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReports.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/mallika.bhat/Playwright_20thMarch/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "C:/Users/mallika.bhat/Playwright_20thMarch/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 360000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.42.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "photosynthesis.spec.ts",
+      "file": "photosynthesis.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify the Accessibility scanning in the Landing page ",
+          "file": "photosynthesis.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login & Restart Lesson",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 360000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 22991,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Total violations : 0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify The Accessibility Testing in Dashboard page.",
+                          "duration": 21301,
+                          "steps": [
+                            {
+                              "title": "Navigate to the learnspace url and login.",
+                              "duration": 1
+                            },
+                            {
+                              "title": "Restart dashboard lesson",
+                              "duration": 1
+                            },
+                            {
+                              "title": "Accessibility scan in the Dashboard home Page.",
+                              "duration": 2
+                            }
+                          ]
+                        }
+                      ],
+                      "startTime": "2024-04-04T09:06:30.608Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-in-the-Landing-page-Login-Restart-Lesson-Google-Chrome\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-in-the-Landing-page-Login-Restart-Lesson-Google-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-in-the-Landing-page-Login-Restart-Lesson-Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "658b823829076fcdc5b4-4d67b4d182e5d3e33ca0",
+              "file": "photosynthesis.spec.ts",
+              "line": 11,
+              "column": 9
+            },
+            {
+              "title": "Start Photosynthesis Sim & Set Light internsity",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 360000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "interrupted",
+                      "duration": 247175,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify Start Sim & Set Light internsity.",
+                          "duration": -1,
+                          "steps": [
+                            {
+                              "title": "Start the sim.",
+                              "duration": 1
+                            }
+                          ]
+                        }
+                      ],
+                      "startTime": "2024-04-04T09:06:55.323Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanni-9a01b-e-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanni-9a01b-e-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "658b823829076fcdc5b4-8c8c4166a9db138c3cd6",
+              "file": "photosynthesis.spec.ts",
+              "line": 32,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-04-04T09:06:29.936Z",
+    "duration": 272797.72099999996,
+    "expected": 1,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
