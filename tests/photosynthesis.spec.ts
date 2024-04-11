@@ -1,11 +1,20 @@
 import { expect, test } from "../page-objects/my-test";
+import { Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 const username = 'itptest03';
 const password = 'Password1';
 
 //Requirement : Need to run test in sequential mode and capture accessiblity results of each page
-
 test.describe.configure({ mode: 'serial' });
+let page: Page;
+
+test.beforeAll(async ({ browser }) => {
+    page = await browser.newPage();
+});
+
+test.afterAll(async () => {
+    await page.close();
+});
 
 test.describe("Verify the Accessibility scanning ", () => {
     test("Login & Restart Lesson", async ({

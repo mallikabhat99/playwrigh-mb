@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\playwright.config.ts",
-    "rootDir": "C:/Users/mallika.bhat/Playwright_20thMarch/tests",
+    "configFile": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\playwright.config.ts",
+    "rootDir": "C:/Users/mallika.bhat/SerialMode_Accessibility/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,12 +39,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/mallika.bhat/Playwright_20thMarch/test-results",
+        "outputDir": "C:/Users/mallika.bhat/SerialMode_Accessibility/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "Google Chrome",
         "name": "Google Chrome",
-        "testDir": "C:/Users/mallika.bhat/Playwright_20thMarch/tests",
+        "testDir": "C:/Users/mallika.bhat/SerialMode_Accessibility/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -67,9 +67,9 @@
       "specs": [],
       "suites": [
         {
-          "title": "Verify the Accessibility scanning in the Landing page ",
+          "title": "Verify the Accessibility scanning ",
           "file": "photosynthesis.spec.ts",
-          "line": 10,
+          "line": 21,
           "column": 6,
           "specs": [
             {
@@ -87,11 +87,11 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 22991,
+                      "duration": 32446,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Total violations : 0\n"
+                          "text": "Total violations : 2\n"
                         }
                       ],
                       "stderr": [],
@@ -99,7 +99,7 @@
                       "steps": [
                         {
                           "title": "Verify The Accessibility Testing in Dashboard page.",
-                          "duration": 21301,
+                          "duration": 30763,
                           "steps": [
                             {
                               "title": "Navigate to the learnspace url and login.",
@@ -107,31 +107,26 @@
                             },
                             {
                               "title": "Restart dashboard lesson",
-                              "duration": 1
+                              "duration": 5
                             },
                             {
                               "title": "Accessibility scan in the Dashboard home Page.",
-                              "duration": 2
+                              "duration": 1
                             }
                           ]
                         }
                       ],
-                      "startTime": "2024-04-04T09:06:30.608Z",
+                      "startTime": "2024-04-11T10:59:33.641Z",
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-in-the-Landing-page-Login-Restart-Lesson-Google-Chrome\\video-1.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-in-the-Landing-page-Login-Restart-Lesson-Google-Chrome\\video.webm"
+                          "path": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-Login-Restart-Lesson-Google-Chrome\\video.webm"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-in-the-Landing-page-Login-Restart-Lesson-Google-Chrome\\trace.zip"
+                          "path": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-Login-Restart-Lesson-Google-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -139,14 +134,14 @@
                   "status": "expected"
                 }
               ],
-              "id": "658b823829076fcdc5b4-4d67b4d182e5d3e33ca0",
+              "id": "658b823829076fcdc5b4-dc4a8c5e9b98de87b898",
               "file": "photosynthesis.spec.ts",
-              "line": 11,
+              "line": 22,
               "column": 9
             },
             {
               "title": "Start Photosynthesis Sim & Set Light internsity",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -158,45 +153,94 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "interrupted",
-                      "duration": 247175,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 7323,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for frameLocator('iframe[title=\"Photosynthesis\"]').getByLabel('Photosynthesis Sim Start')\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for frameLocator('iframe[title=\"Photosynthesis\"]').getByLabel('Photosynthesis Sim Start')\u001b[22m\n\n    at PhotosynthesisPage.startPhotoSynthesisLab (C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\page-objects\\photosynthesis-page.ts:18:32)\n    at C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\tests\\photosynthesis.spec.ts:53:38\n    at C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\tests\\photosynthesis.spec.ts:51:9",
+                        "location": {
+                          "file": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\page-objects\\photosynthesis-page.ts",
+                          "column": 32,
+                          "line": 18
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\page-objects\\photosynthesis-page.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36masync\u001b[39m startPhotoSynthesisLab() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstartButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36masync\u001b[39m increaseChamber2LightIntensity() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mincreaseChamber2\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick({ clickCount\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\page-objects\\photosynthesis-page.ts",
+                            "column": 32,
+                            "line": 18
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for frameLocator('iframe[title=\"Photosynthesis\"]').getByLabel('Photosynthesis Sim Start')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\page-objects\\photosynthesis-page.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36masync\u001b[39m startPhotoSynthesisLab() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstartButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36masync\u001b[39m increaseChamber2LightIntensity() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mincreaseChamber2\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick({ clickCount\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at PhotosynthesisPage.startPhotoSynthesisLab (C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\page-objects\\photosynthesis-page.ts:18:32)\u001b[22m\n\u001b[2m    at C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\tests\\photosynthesis.spec.ts:53:38\u001b[22m\n\u001b[2m    at C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\tests\\photosynthesis.spec.ts:51:9\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
                           "title": "Verify Start Sim & Set Light internsity.",
-                          "duration": -1,
+                          "duration": 6261,
+                          "error": {
+                            "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for frameLocator('iframe[title=\"Photosynthesis\"]').getByLabel('Photosynthesis Sim Start')\u001b[22m\n",
+                            "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for frameLocator('iframe[title=\"Photosynthesis\"]').getByLabel('Photosynthesis Sim Start')\u001b[22m\n\n    at PhotosynthesisPage.startPhotoSynthesisLab (C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\page-objects\\photosynthesis-page.ts:18:32)\n    at C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\tests\\photosynthesis.spec.ts:53:38\n    at C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\tests\\photosynthesis.spec.ts:51:9",
+                            "location": {
+                              "file": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\page-objects\\photosynthesis-page.ts",
+                              "column": 32,
+                              "line": 18
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\page-objects\\photosynthesis-page.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36masync\u001b[39m startPhotoSynthesisLab() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstartButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36masync\u001b[39m increaseChamber2LightIntensity() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mincreaseChamber2\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick({ clickCount\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
                           "steps": [
                             {
                               "title": "Start the sim.",
-                              "duration": 1
+                              "duration": 2
                             }
                           ]
                         }
                       ],
-                      "startTime": "2024-04-04T09:06:55.323Z",
+                      "startTime": "2024-04-11T11:00:08.232Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanni-9a01b-e-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\test-failed-1.png"
+                          "path": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\test-failed-2.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\test-failed-3.png"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\mallika.bhat\\Playwright_20thMarch\\test-results\\photosynthesis-Verify-the-Accessibility-scanni-9a01b-e-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\trace.zip"
+                          "path": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\test-results\\photosynthesis-Verify-the-Accessibility-scanning-Start-Photosynthesis-Sim-Set-Light-internsity-Google-Chrome\\trace.zip"
                         }
-                      ]
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\mallika.bhat\\SerialMode_Accessibility\\page-objects\\photosynthesis-page.ts",
+                        "column": 32,
+                        "line": 18
+                      }
                     }
                   ],
-                  "status": "skipped"
+                  "status": "unexpected"
                 }
               ],
-              "id": "658b823829076fcdc5b4-8c8c4166a9db138c3cd6",
+              "id": "658b823829076fcdc5b4-d3dfb980e7ac1a3720df",
               "file": "photosynthesis.spec.ts",
-              "line": 32,
+              "line": 45,
               "column": 9
             }
           ]
@@ -206,11 +250,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-04T09:06:29.936Z",
-    "duration": 272797.72099999996,
+    "startTime": "2024-04-11T10:59:32.937Z",
+    "duration": 48823.964,
     "expected": 1,
-    "skipped": 1,
-    "unexpected": 0,
+    "skipped": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
